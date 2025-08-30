@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 1em 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  background-image: url('https://wallpapercave.com/wp/wp4903915.jpg');
+  background-size: cover;
+  color: white;
+  padding: 5em 0;
+  text-align: center;
+}
+
+.hero .btn {
+  background-color: #2ecc71;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.info-section {
+  padding: 3em 0;
+}
+
+.alt-bg {
+  background-color: #e8e8e8;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
