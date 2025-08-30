@@ -1,89 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Get Minecraft Premium</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5c/Minecraft_logo.png" type="image/png">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Minecraft Premium</h1>
-      <nav>
-        <a href="#why">Why Premium?</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#get">How to Get</a>
-        <a href="#faq">FAQs</a>
-      </nav>
-    </div>
-  </header>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
 
-  <section class="hero">
-    <div class="container">
-      <h2>Unlock the Full Minecraft Experience</h2>
-      <p>Get your official Minecraft Premium account and join millions online, access exclusive skins, and enjoy a better gameplay experience.</p>
-      <a href="#get" class="btn">Get Premium Now</a>
-      <img src="https://i.imgur.com/7mjGyBF.png" alt="Minecraft Character" class="hero-img"/>
-    </div>
-  </section>
+header {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 1em 0;
+}
 
-  <section id="why" class="info-section">
-    <div class="container">
-      <h2>Why Do You Need Minecraft Premium?</h2>
-      <p>Minecraft Premium is essential if you want to enjoy all features like official servers, cross-platform multiplayer, and exclusive content!</p>
-      <img src="https://i.imgur.com/sx0fupA.png" alt="Minecraft World" class="why-img"/>
-    </div>
-  </section>
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
 
-  <section id="benefits" class="info-section alt-bg">
-    <div class="container">
-      <h2>What You Get With Premium</h2>
-      <ul>
-        <li>✅ Access to official Minecraft servers and multiplayer</li>
-        <li>✅ Automatic game updates</li>
-        <li>✅ Access to the Minecraft Marketplace</li>
-        <li>✅ Premium skins, texture packs, and add-ons</li>
-        <li>✅ Cross-platform play with friends</li>
-      </ul>
-      <img src="https://i.imgur.com/DhEd4ua.png" alt="Minecraft Players" class="benefits-img"/>
-    </div>
-  </section>
+nav {
+  margin-top: 10px;
+}
 
-  <section id="get" class="info-section">
-    <div class="container">
-      <h2>How to Get Minecraft Premium</h2>
-      <ol>
-        <li>Visit the official Minecraft website: <a href="https://www.minecraft.net" target="_blank">minecraft.net</a></li>
-        <li>Create a free Microsoft account or log in.</li>
-        <li>Choose your platform (Java Edition, Bedrock, etc.).</li>
-        <li>Select the payment method and purchase the game.</li>
-        <li>Download and start playing!</li>
-      </ol>
-    </div>
-  </section>
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
 
-  <section id="faq" class="info-section alt-bg">
-    <div class="container">
-      <h2>Frequently Asked Questions</h2>
-      <h4>Is Minecraft Premium a one-time purchase?</h4>
-      <p>Yes, for Java Edition it is a one-time purchase, though Realms and other services may require a subscription.</p>
+nav a:hover {
+  color: #2ecc71;
+}
 
-      <h4>Can I transfer my premium account?</h4>
-      <p>No, your account is linked to your Microsoft account and is non-transferable.</p>
-    </div>
-  </section>
+.hero {
+  background-image: url('https://wallpapercave.com/wp/wp4903915.jpg');
+  background-size: cover;
+  color: white;
+  padding: 5em 0;
+  text-align: center;
+  position: relative;
+}
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 MinecraftPromo | Not affiliated with Mojang or Microsoft.</p>
-      <div class="socials">
-        <a href="https://twitter.com/minecraft" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Twitter-logo-2012.svg" alt="Twitter" class="social-icon"/></a>
-        <a href="https://www.instagram.com/minecraft" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" class="social-icon"/></a>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+.hero .btn {
+  background-color: #2ecc71;
+  padding: 12px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
 
+.hero .btn:hover {
+  background-color: #27ae60;
+}
+
+.hero-img {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.info-section {
+  padding: 3em 0;
+  text-align: center;
+}
+
+.alt-bg {
+  background-color: #e8e8e8;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.why-img, .benefits-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 1em 0;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
